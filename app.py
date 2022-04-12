@@ -72,7 +72,7 @@ def sync(force_sync: bool, graceful: bool, debug: bool, document_type: Optional[
 
     # First we need tosync solvers
 
-    stats = sync_solver_documents(force=force_sync, graceful=graceful, graph=graph)
+    stats = sync_solver_documents(force=force_sync, graceful=graceful, graph=graph, randomize_listing=True)
 
     _LOGGER.info(
         "Syncing triggered by sync_solver_documents function completed with "
